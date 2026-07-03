@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangement panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bs5/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="container-fluid">
+    <div class="row">
+        <!-- ساید بار -->
+        <aside class="col-md-2 ">
+            <div class="mx-2">
+                <h3 class="head-side text-white "><i class="bi bi-grid-1x2-fill text-primary"></i> داشبورد</h3>
+                <!-- دکمه های موبایلتی مود ساید بار -->
+                <div class="mobile-container">
+
+                    <div class="topnav ">
+
+                        <div id="myLinks" class="">
+                            <a href="#news" class="d-block"><i class="bi bi-house-door-fill"></i>&nbsp;&nbsp;
+                                داشبورد</a>
+                            <a href="#contact" class="d-block"><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp; نامه
+                                ها</a>
+                            <a href="#about" class="d-block"><i class="bi bi-file-earmark-check-fill"></i>&nbsp;&nbsp;
+                                درخواست ها</a>
+                            <a href="#about" class="d-block">
+                                <i class="bi bi-people-fill"></i>&nbsp;&nbsp;
+                                کاربران</a>
+                            <a href="#about" class="d-block">
+                                <i class="bi bi-calendar2-fill"></i>&nbsp;&nbsp;
+                                جلسات
+                            </a>
+                            <a href="#about" class="d-block">
+                                <i class="bi bi-graph-up"></i>&nbsp;&nbsp;
+                                گزارشات
+                            </a>
+                            <a href="#about" class="d-block">
+                                <i class="bi bi-gear-fill"></i>&nbsp;&nbsp;
+                                تنظیمات
+                            </a>
+                            <a href="#about" class="d-block">
+                                <i class="bi bi-box-arrow-in-right"></i>&nbsp;&nbsp;
+                                خروج
+                            </a>
+                        </div>
+                        <a href="#" class="icon text-light" style="cursor: pointer;" onclick="Function()">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+
+
+
+                    <div class=" second-head-side text-center">
+                        <h4 class="text-white">ادمین</h4>
+                        <p class="text-secondary">مدیر سیستم</p>
+                    </div>
+                    <!-- دکمه های ساید بار -->
+                    <div class="w-100 button-group side-btn">
+                        <button class="btn d-block w-100  text-white "><i class="bi bi-house-door-fill"></i>&nbsp;&nbsp;
+                            داشبورد</button>
+                        <button class="btn d-block text-white  "><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp; نامه
+                            ها</button>
+                        <button class="btn d-block text-white  "><i
+                                class="bi bi-file-earmark-check-fill"></i>&nbsp;&nbsp;
+                            درخواست ها</button>
+                        <button class="btn d-block text-white  "><i class="bi bi-people-fill"></i>&nbsp;&nbsp;
+                            کاربران</button>
+                        <button class="btn d-block text-white  "><i class="bi bi-calendar2-fill"></i>&nbsp;&nbsp;
+                            جلسات</button>
+                        <button class="btn d-block text-white  "><i class="bi bi-graph-up"></i>&nbsp;&nbsp;
+                            گزارشات</button>
+                        <button class="btn d-block text-white  "><i class="bi bi-gear-fill"></i>&nbsp;&nbsp;
+                            تنظیمات</button>
+                        <button class="btn d-block text-white  "><i class="bi bi-box-arrow-in-right"></i>&nbsp;&nbsp;
+                            خروج</button>
+                    </div>
+                </div>
+
+
+        </aside>
+        <main class="col-md-10 ">
+            <div class="m-3">
+                <!-- سر صفحه بخش اصلی -->
+                <section class="main-head d-flex justify-content-between mt-5 mb-2 flex-wrap">
+                    <div id="main-title">
+                        <h3 class="text-black">سلام ادمین</h3>
+                        <p class="text-muted fw-bold">به پنل مدیریت خوش آمدید</p>
+                    </div>
+                    <!-- ایمپوت های سرصفحه -->
+                    <div class="main-head-btn d-flex justify-content-between h-100">
+
+                        <section class="input-group d-flex rounded-3  h-25 shadow mx-1">
+                            <span class="input-group-text  rounded-0 rounded-end-3 border-0 card-white"><i
+                                    class="bi bi-search "></i></span>
+                            <input type="search" placeholder="&nbsp;جستجو"
+                                class="form-control border-0 py-1 rounded-0 rounded-start-3 card-white">
+                        </section>
+                        <section class="head-btn d-flex justify-content-evenly w-75">
+                            <button class="card-white btn  shadow rounded-3"><i class="bi bi-bell-fill"></i></button>
+                            <button class=" card-white btn  shadow rounded-3"><i class="bi bi-bell-fill"></i></button>
+                            <button class=" card-white btn shadow rounded-3"><i
+                                    class="bi bi-chat-left-fill"></i></button>
+                        </section>
+
+                    </div>
+                </section>
+                <!-- آیتم های سرصفحه -->
+                <section class="card-grp d-flex gap-3  justify-content-center position-relative">
+                    <div class="card shadow">
+                        <p class="text-secondary fw-bold">نامه های امروز</p>
+                        <h4 class="text-black mt-2">152</h4>
+                        <span class="bg-primary"><i class="bi bi-envelope-fill"></i></span>
+                    </div>
+                    <div class="card shadow">
+                        <p class="text-secondary fw-bold">کاربران</p>
+                        <h4 class="text-black mt-2">825</h4>
+                        <span class="bg-success"><i class="bi bi-people-fill"></i></span>
+                    </div>
+                    <div class="card shadow">
+                        <p class="text-secondary fw-bold">جلسات</p>
+                        <h4 class="text-black mt-2">34</h4>
+                        <span class="bg-ylw"><i class="bi bi-calendar-fill"></i></span>
+                    </div>
+                    <div class="card shadow">
+                        <p class="text-secondary fw-bold">درخواست ها</p>
+                        <h4 class="text-black mt-2">96</h4>
+                        <span class="bg-ppl"><i class="bi bi-file-earmark-fill"></i></span>
+                    </div>
+                </section>
+                <!-- جدول های اطلاعات -->
+                <section class="second-card-grp d-flex justify-content-between  my-4">
+                    <div class="tbe  col-12 shadow p-3">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h3>آخرین درخواست ها</h3>
+                            <button class="btn btn-primary rounded-3">مشاهده همه</button>
+                        </div>
+                        <table class="w-100 fw-bold">
+                            <thead class=" ">
+                                <tr class=" ">
+                                    <th class="w-25 text-center py-3 ">شماره</th>
+                                    <th class="w-25 text-center py-3 ">کابر</th>
+                                    <th class="w-25 text-center py-3 ">موضوع</th>
+                                    <th class="w-25 text-center py-3 ">وضعیت</th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr class="border-bottom">
+                                    <td class=" text-center py-3">#1200</td>
+                                    <td class=" text-center py-3">محمد رضایی</td>
+                                    <td class="text-center py-3">مرخصی</td>
+                                    <td class=" text-center py-3"><span
+                                            class="p-2 rounded-4 text-light  bg-success">تایید</span></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                    <td class="text-center py-3">#1201</td>
+                                    <td class=" text-center py-3">علی کریمی</td>
+                                    <td class=" text-center py-3">ماموریت</td>
+                                    <td class=" text-center py-3"><span class="p-2 rounded-4 text-light  bg-warning">در
+                                            انتظار</span></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                    <td class=" text-center py-3">#1202</td>
+                                    <td class=" text-center py-3">سینا احمدی</td>
+                                    <td class=" text-center py-3">مالی</td>
+                                    <td class=" text-center py-3"><span class="p-2 rounded-4 text-light  bg-danger">رد
+                                            شد</span></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="second-tbe shadow p-3">
+                        <h3 class="mb-2">فعالیت های اخیر</h3>
+                        <div class="main-inf d-flex align-items-center border-bottom ">
+                            <span class="fs-5  text-primary ms-4"><i class="bi bi-check-circle-fill"></i></span>
+                            <div>
+                                <h6 class="">ثبت نامه جدید</h6>
+                                <p class="m-0 fw-bold text-secondary"><span>۲۰</span> دقیقه پیش</p>
+                            </div>
+
+                        </div>
+                        <div class="main-inf d-flex align-items-center border-bottom ">
+                            <span class="fs-5  text-primary ms-4"><i class="bi bi-person-plus-fill"></i></span>
+                            <div>
+                                <h6>کابر جدید</h6>
+                                <p class="m-0 fw-bold text-secondary"><span>۱</span> ساعت پیش</p>
+                            </div>
+
+                        </div>
+                        <div class="main-inf d-flex align-items-center  ">
+                            <span class="fs-5  text-primary ms-4"><i class="bi bi-calendar2-check-fill"></i></span>
+                            <div class="">
+                                <h6>ثبت جلسه</h6>
+                                <p class="m-0 fw-bold text-secondary"><span>۲</span> ساعت پیش</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- نمودار میله ای -->
+                <section class="w-100">
+                    <div class="wrap  ">
+                        <div class="card card-chart shadow  h-100 ">
+                            <div class="chart-title fs-4">عملکرد ماهانه</div>
+                            <div class="chart-area">
+                                <div class="plot">
+                                    <div class="grid-lines border-start ms-3   ">
+                                        <span data-val="160 "></span>
+                                        <span data-val="140"></span>
+                                        <span data-val="120"></span>
+                                        <span data-val="100"></span>
+                                        <span data-val="80"></span>
+                                        <span data-val="60"></span>
+                                        <span data-val="40"></span>
+                                        <span data-val="20"></span>
+                                        <span data-val="0"></span>
+                                    </div>
+                                    <div class="bars" id="bars"></div>
+                                </div>
+
+                                <div class="labels" id="labels">
+                                    <label for="month" class="label-col">شهریور</label>
+                                    <label for="month" class="label-col">مرداد</label>
+                                    <label for="month" class="label-col">تیر</label>
+                                    <label for="month" class="label-col">خرداد</label>
+                                    <label for="month" class="label-col">اردیبهشت</label>
+                                    <label for="month" class="label-col">فروردین</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+
+        </main>
+    </div>
+
+
+
+    <script src="bs5/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
